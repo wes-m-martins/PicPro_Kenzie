@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicPro</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <header class="cabecalho">
+        <div class="container">
+                <figure class="cabecalho_logoPicpro">
+                    <img src=".../../assets/img/logo-picpro.png" alt="logo-picpro">
+                </figure>
+                <figure class="cabecalho_logoKenzie">
+                    <img src=".../../assets/img/logo-kenzie.png" alt="logo-Kenzie">
+                </figure>
+        </div>
+   </header>
+
+    <main>
+        <div class="container">
+        <section class="secaoDetalhesConta">
+                <div class="secaoDetalhesConta_sobreUsuario">                    
+                    <img src="./assets/img/usuario.png" alt="Imagem do usuario">
+                    <p>Olá, <strong>usuario</strong></p>                    
+                </div>
+
+                <div class="secaoDetalhesConta_sobreSaldo">
+                    <p>Saldo PicPay, <strong>R$ </strong></p>
+                    <button>Extratos</button>
+                </div>
+                <ul class="secaoDetalhesConta__opcoesTransacoes">
+                    <li class="secaoDetalhesConta_itemTransacao" id="1">
+                        <img src="./assets/img/qrcode.png" alt="QRCode">
+                        <p >QR Code</p>
+                    </li>
+                    <li class="secaoDetalhesConta_itemTransacao" id="2">
+                        <img src="./assets/img/pix.png" alt="">
+                        <p>Pix</p>
+                    </li>
+                    <li class="secaoDetalhesConta_itemTransacao" id="3">
+                        <img src="./assets/img/codigo.png" alt="Boleto">
+                        <p>Pagar Boletos</p>
+                    </li class="secaoDetalhesConta_itemTransacao" >
+                    <li class="secaoDetalhesConta_itemTransacao" id="4">
+                        <img src="./assets/img/cobrar-icon.png" alt="Cobrar">
+                        <p>Cobrar</p>
+                    </li>
+                </ul>
+
+        </div>
+        </section>
+        <section class="secaoTransacoes" >
+            <!--div geral-->
+            <div class="container" >
+                <!--div selecione forma de pgto-->
+                <div class="secaoTransacao_avisoSelecao mostrar" >
+                    <p>Selecione forma de pagamento</p>
+                    <img src="./assets/img/banner.png" alt="">
+                </div>
+                <!--div qrcode-->
+                <div data-id="1" class="secaoTransacao_QrCode" >    
+                    <img src="./assets/img/qrcode-imagem.png" alt="">
+                    <p>Usuario</p>
+                    <button>Cobre um amigo</button>
+                    <a href="">Compartilhar meu codigo</a>
+                </div>
+                <!--div pix-->
+                <div data-id="2" class="secaoTransacao_Pix" >
+                    <img src="./assets/img/pix-logo.png" alt="Logo Pix">
+                    <div class="secaoTransacao_boxOpcao" >
+                        <img src="./assets/img/pix1.png" alt="">
+                        <p>Envie por CPF/CNPJ, telefone, e-mail</p>
+                    </div>
+                    <div class="secaoTransacao_boxOpcao" >
+                        <img src="./assets/img/pix2.png" alt="">
+                        <p>Insira um codigo PicPay</p>
+                    </div>
+                </div>
+                <!--div boleto-->
+                <div data-id="3" class="secaoTransacao_boleto" >
+                    <img src="./assets/img/boleto.png" alt="Imagem Boleto">
+                    <h2>Pagar com código de barras</h2>
+                    <p>Você pode parcelar em até 12x no cartão ou usar seu saldo em carteira para pagar a vista</p>
+                    <input type="text" placeholder="Insira o codigo de barras">
+                </div>
+                 <!--div cobrar-->
+                 <div data-id="4" class="secaoTransacao__cobrar" >
+                    <img src="./assets/img/cobrar.png" alt="Icone cobrar">
+                    <h2>Cobrar</h2>
+                    <p>Divida a conta com os amigos de forma facil</p>
+                    <div class="secaoTransacao_boxOpcao" >
+                        <img src="./assets/img/picpay-icon.png" alt="">
+                        <p><strong>Amigos do picpay</strong> Divida a conta com os amigos</p>
+                    </div>
+
+                </div>
+              
+           
+                
+            </div>
+        </section>
+
+    </main>
+    <footer class="rodape" >
+        <div class="container" >
+            <ul class="rodape__menuPrincipal" >
+                <li class="rodape__menuItem" >
+                    <a href=""><img src="./assets/img/inicio.png" alt="Inicio">
+                        <p>Inicio</p>
+                    </a>
+                </li>
+                <li class="rodape__menuItem" >
+                    <a href=""><img src="./assets/img/carteira-icon.png" alt="Carteira">
+                        <p>Carteira</p>
+                    </a>
+                </li>
+                <li  class="rodape__menuItem rodape__menuItem--Pagar" >
+                    <a href=""><img src="./assets/img/pagar.png" alt="Pagar">
+                        <p>Pagar</p>
+                    </a>
+                </li  >
+                <li  class="rodape__menuItem" >
+                    <a href=""><img src="./assets/img/notificacao.png" alt="Icone notify">
+                       <p>Notificações</p>
+                    </a>
+                </li>
+                <li  class="rodape__menuItem" >
+                    <a href=""><img src="./assets/img/bolsa.png" alt="Icone bolsa">
+                       <p>Bolsa</p>
+                    </a>
+                </li>
+            </ul>
+
+
+        <script src="script.js"></script>
+        <p > Reproduzido por <strong>prog.wesley</strong></p>
+    </div>
+    </footer>
+</body>
+</html>
